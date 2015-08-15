@@ -1,0 +1,10 @@
+<div id="changeFont" class="panels">
+    <ul>
+        <li ng-repeat="font in fontsList"
+            ng-click="current.dcFont=font">
+            <span style="font-family: '{{ font.title.type }}' !important;font-weight: '{{ font.title.weight }}' !important;">{{ font.title.type }}</span>
+            <span>|</span>
+            <span style="font-family: '{{ font.text.type }}' !important;font-weight: '{{ font.text.weight }}' !important;">{{ font.text.type }}</span>
+        </li>
+    </ul>
+</div>

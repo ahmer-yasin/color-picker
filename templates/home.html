@@ -1,0 +1,13 @@
+<div ng-controller="designCtrl">
+	<div ng-include="'templates/layout.html'"></div>
+	<div>
+		<div ng-include="'templates/changeColors.html'"></div>
+		<div ng-include="'templates/changeBackground.html'"></div>
+		<div ng-include="'templates/changeFont.html'"></div>
+		<div class="panels action">
+			<button ng-click="saveSettings()">Save</button><br>
+			<button ng-click="resetSettings()">Reset</button>
+		</div>
+	</div>
+	<div ng-include="'templates/activeStyleSheet.html'"></div>
+</div>

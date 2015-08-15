@@ -1,0 +1,17 @@
+<div class="color-wheel">
+    <div class="theme">
+        <div class="extra_button">
+            <div class="theme__color_black" ng-click="switchColor()" data-color="{{cs.color5}}">
+            </div>
+        </div>
+        <div class="extra_button">
+            <div class="theme__color_black" ng-click="lockUnlock()" data-color="{{lock}}">
+            </div>
+            <label>{{lock}}</label>
+        </div>
+    </div>
+</div>
+<div>
+    <button type="button" ng-click="save()">save</button>
+    <button type="button" ng-click="reset()">reset</button>
+</div>

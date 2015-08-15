@@ -1,0 +1,20 @@
+<div id="changeColors" class="panels">
+	<ul>
+		<li ng-repeat="colors in colorSchemes">
+			<div ng-click="changeColorScheme(colors)">
+				<span style="background-color: {{ colors.color1 }};"></span>
+				<span style="background-color: {{ colors.color2 }};"></span>
+				<span style="background-color: {{ colors.color3 }};"></span>
+				<span style="background-color: {{ colors.color4 }};"></span>
+				<span style="background-color: {{ colors.color5 }};"></span>
+			</div>
+		</li>
+		<li>
+			<a ng-click="loadDialog();">(+) Add Custom</a>
+		</li>
+	</ul>
+</div>
+<div class="dialog" ng-hide="!kuler.open">
+	<kuler></kuler>
+</div>
+<div class="mirror" ng-hide="!kuler.open" ng-click="closeDialog()"></div>

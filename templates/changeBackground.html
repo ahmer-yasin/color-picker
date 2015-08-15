@@ -1,0 +1,41 @@
+<div id="changeBackground" class="panels">
+	<ul>
+		<li ng-repeat="bg in backgrounds">
+			<img ng-src="{{ bg['background-image'] }}"
+				 ng-click="current.dcBGImage=bg">
+		</li>
+	</ul>
+	<div>
+		Upload your own background:<br>
+		<file-reader-gallery></file-reader-gallery>
+
+		<section>
+			<strong>Options</strong><br>
+			Repeat: <select name="repeatType"
+							ng-model="current.dcBGImage['background-repeat']">
+						<option value="repeat">Repeat</option>
+						<option value="no-repeat">No Repeat</option>
+						<option value="repeat-x">Repeat-x</option>
+						<option value="repeat-y">Repeat-y</option>
+		</select>
+			<br>
+
+			Position: <select name="position"
+							  ng-model="current.dcBGImage['background-position']">
+						<option value="none">Position</option>
+						<option value="top">Top</option>
+						<option value="bottom">Bottom</option>
+						<option value="center">Center</option>
+						<option value="left">Left</option>
+						<option value="right">Right</option>
+		</select>
+			<br>
+
+			Size: <select name="size"
+						  ng-model="current.dcBGImage['background-size']">
+					<option value="none" ng-selected="true">Size</option>
+					<option value="cover">Cover</option>
+		</select>
+		</section>
+	</div>
+</div>

@@ -1,0 +1,54 @@
+<style>
+/*.dcFont {*/
+    /*font-family: {{current.dcFont}};*/
+/*}*/
+.dcFont {
+    font-family: {{current.dcFont.text.type}};
+    font-weight: {{current.dcFont.text.weight}};
+}
+.dcFontMain {
+    font-family: {{current.dcFont.title.type}};
+    font-weight: {{current.dcFont.title.weight}};
+}
+
+
+.dcBGImage {
+    background-image:    url({{current.dcBGImage['background-image']}});
+    background-repeat:   {{current.dcBGImage['background-repeat']}};
+    background-position: {{current.dcBGImage['background-position']}};
+    background-size:     {{current.dcBGImage['background-size']}};
+}
+
+.dcBGColor1 {
+    background-color: {{current.colorScheme.color1}};
+}
+.dcBGColor2 {
+    background-color: {{current.colorScheme.color2}};
+}
+.dcBGColor3 {
+    background-color: {{current.colorScheme.color3}};
+}
+.dcBGColor4 {
+    background-color: {{current.colorScheme.color4}};
+}
+.dcBGColor5, .theme__color_black {
+    background-color: {{current.colorScheme.color5}};
+}
+
+.dcColor1 {
+    color: {{current.colorScheme.color1}};
+}
+.dcColor2 {
+    color: {{current.colorScheme.color2}};
+}
+.dcColor3 {
+    color: {{current.colorScheme.color3}};
+}.dcColor4 {
+    color: {{current.colorScheme.color4}};
+}
+.dcColor5 {
+    color: {{current.colorScheme.color5}};
+}
+
+
+</style>
